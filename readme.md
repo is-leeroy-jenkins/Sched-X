@@ -1,8 +1,10 @@
 ###### Schedule-X
 ![](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/resources/images/git/schedx.png)
 
-- A statistical exploration of **Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
-**Budget Year (BY)**
+#### A machine-learning pipeline for Combined Schedule reporting 
+- **Prior Year (PY)** 
+- **Current Year (CY)**  
+- **Budget Year (BY)**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/max.ipynb)
 
