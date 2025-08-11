@@ -124,7 +124,7 @@ A minimal table might look like:
 
 ## 🎯 Configuration
 
-Set these variables near the top of the notebook:
+- Set these variables near the top of the notebook:
 
 ```
 python
