@@ -186,7 +186,7 @@ pip install -r requirements.txt
 
 ## 📝 License
 
-#### Sched-X is published under the MIT General Public License v3 [License](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/LICENSE.txt).
+#### Sched-X is published under the MIT General Public License v3 [here](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/LICENSE.txt).
 
 
 
