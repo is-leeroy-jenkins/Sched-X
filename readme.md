@@ -2,11 +2,35 @@
 ![](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/resources/images/git/schedx.png)
 
 # Schedule-X 
-- A Prior Year, Current Year, and Budget Year Statistical Analysis
-- A statistical exploration of **Schedule-X** style budget tables across **Prior Year (PY)**, 
-**Current Year (CY)**, and **Budget Year (BY)**. 
-- Ideal for analysts working on budget submissions,
-fiscal snapshots, and account-level measures.
+
+## 🧩 Background
+- At formulation time, agency budget offices key in both policy and baseline estimates—budget
+authority, outlays, and receipts—through Schedule X; MAX then auto-populates the related schedules (
+A and S) from those entries.
+whitehouse.gov
+
+- For the prior-year actuals, MAX doesn’t rely on agency keystrokes: it pulls them from Treasury’s
+Governmentwide Treasury Account Symbol Adjusted Trial Balance System (GTAS) after GTAS “lock” in
+late October
+
+- This design also keeps the Budget’s “actual” column consistent with the SF-133 Report on Budget
+Execution, which agencies submit through GTAS—OMB’s A-11 notes that the Budget’s actuals are derived
+from the same data as the SF-133, and Treasury’s guidance emphasizes using the GTAS Period 12
+revision window to make GTAS and the Budget match.
+
+
+- Some schedules have their own external sources/constraints. Employment (Schedule Q) is checked
+against OPM’s monthly civilian FTE totals that OPM transmits to OMB
+
+- DoD military employment is provided separately to OMB and reflected in MAX.
+
+
+- Federal credit programs must compute subsidy rates and financing-account interest with OMB’s Credit
+Subsidy Calculator (CSC2); 
+
+- Receipts estimates aren’t free-hand entries either—the Administration’s official receipts forecasts
+are produced by Treasury’s Office of Tax Analysis (OTA) and carried through the Budget (and MSR).
+U.S. Department of the Treasury
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
 
