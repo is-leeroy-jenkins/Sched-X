@@ -62,13 +62,13 @@ jupyter notebook
 
 Open `ipynb/max.ipynb` and run cells top-to-bottom.
 
-### 📊 Regression
+## 📊 Regression
 
 - Linear, Ridge, Lasso, ElasticNet
 - Decision Tree, Random Forest, Gradient Boosting
 - SVR, KNN, MLP Regressor, Bayesian Ridge, Huber Regressor
 
-### ✅ Classification
+## ✅ Classification
 
 - Logistic Regression, Perceptron, SVM, KNN
 - Decision Tree, Random Forest, Extra Trees, AdaBoost, Gradient Boosting
@@ -87,6 +87,12 @@ Open `ipynb/max.ipynb` and run cells top-to-bottom.
 - Scaling (`StandardScaler`, `MinMaxScaler`, `RobustScaler`)
 - Feature creation via polynomial expansion
 - Dimensionality reduction and outlier detection
+
+## 🏛️ Use in Government
+
+- 📉 Budget Execution forecasting
+- 🏛️ OMB MAX A-11 DE 
+- 🧮 Audit prep and  anomaly detection
 
 ## 🔎 Data Expectations
 
