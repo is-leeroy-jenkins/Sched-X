@@ -73,3 +73,71 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn mglearn jupyter
 
 # 3) run Jupyter
 jupyter notebook
+
+## Repo Structure
+.
+├─ ipynb/
+│  └─ max.ipynb
+├─ data/
+├─ images/
+├─ requirements.txt
+└─ README.md
+
+## What the Notebook Does
+
+A clear, repeatable pipeline for Schedule-X style analysis across **PY**, **CY**, and **BY**.
+
+### 1) Load & Validate
+- Reads your dataset (CSV or DataFrame) and selects the PY/CY/BY columns.
+- Coerces them to numeric (safe conversion with errors coerced to `NaN`).
+- Optional zero filtering (e.g., drop structural zeros before tests/plots).
+- Basic sanity checks (non-null counts, distinct values) so you know what you’re analyzing.
+
+### 2) Descriptive Statistics (PY, CY, BY)
+- Computes classic summary stats: `count`, `mean`, `std`, `min`, `25%`, `50%`, `75%`, `max`.
+- Adds **skewness** and **kurtosis** for shape diagnostics.
+- Presents **PY Metrics**, **CY Metrics**, **BY Metrics** as compact summary tables for quick copy/paste into memos.
+
+### 3) Probability Distributions
+- Plots histograms with KDE overlays for each of PY, CY, BY.
+- Helps you spot heavy tails, skew, and multi-modality.
+- Optional zero exclusion keeps massed-at-zero distributions from swamping the shapes.
+
+### 4) Normality Testing
+- Runs **Shapiro–Wilk** per column; reports statistic and p-value.
+- Provides a quick interpretation (e.g., “reject” vs “do not reject” normality at α = 0.05 by default).
+
+### 5) Confidence Intervals
+- Computes mean **confidence intervals** for each column (default 95%).
+- Uses `t` critical values for modest sample sizes; falls back to normal approximation for large `n`.
+- Displays point estimates with lower/upper bounds so you can cite uncertainty, not just point values.
+
+### 6) Inferential Test (One-Sample t-Test on CY)
+- Tests **CY** against a configurable baseline (μ₀ = 0 by default).
+- Reports **t-statistic**, **degrees of freedom**, **p-value**, and a concise interpretation.
+- Encourages policy-relevant μ₀ (e.g., enacted/planned level) when zero is not meaningful.
+
+### 7) (Optional) ML Demo Utility
+- Includes a compact `plot_decision_regions` helper (scikit-learn compatible) for quick classification demos.
+- Useful when you want to add a pedagogical ML visual without leaving the notebook.
+
+---
+
+### Configuration Knobs (up top in the notebook)
+- `DATA_PATH` — file path if loading from CSV.
+- `COL_PY`, `COL_CY`, `COL_BY` — rename to match your dataset.
+- `DROP_ZEROS` — `True/False` to exclude zeros for plots/tests.
+- `ALPHA` — significance level for tests (default `0.05`).
+- `CI_LEVEL` — confidence level for CIs (default `0.95`).
+
+### Outputs You Can Reuse
+- **Summary tables** for PY/CY/BY (paste into slides or memos).
+- **Normality results** with p-values (document your assumptions).
+- **Confidence-interval table** (report estimate uncertainty).
+- **Distribution plots** (save as images for briefings).
+- **t-test readout** (decision & effect direction).
+
+> **Assumptions & Notes**
+> - Observations are independent; columns represent the same conceptual measure across PY/CY/BY.
+> - If normality is rejected and `n` is small, consider transforming data or using non-parametric tests.
+> - Zero handling is configurable because structural zeros can distort both plots and tests.
