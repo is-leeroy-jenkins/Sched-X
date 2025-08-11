@@ -3,7 +3,7 @@
 
 # Schedule-X: Federal Budget Statistical Analysis (PY · CY · BY)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/max.ipynb)
 
 - A clean, reproducible Jupyter Notebook (`ipynb/max.ipynb`) for quick statistical exploration of
 **Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
@@ -38,7 +38,7 @@
 
 ---
 
-## 🎯 Quickstart
+##🎯 Quickstart
 
 ### Option A — Google Colab (no local setup)
 
@@ -67,7 +67,7 @@ Open `ipynb/max.ipynb` and run cells top-to-bottom.
 
 ---
 
-## 🔎 Data Expectations
+##🔎 Data Expectations
 
 The notebook is designed for **Schedule-X** style datasets with numeric columns for:
 
@@ -90,7 +90,7 @@ A minimal table might look like:
 
 ---
 
-## 📏 Outputs
+##📏 Outputs
 
 - **Summary Frames** — PY/CY/BY metrics with skew/kurtosis (copy-ready).
 - **Distribution Plots** — histograms + KDE overlays per column.
@@ -102,7 +102,7 @@ A minimal table might look like:
 
 ---
 
-## 🎯 Configuration
+##🎯 Configuration
 
 Set these variables near the top of the notebook:
 
@@ -126,7 +126,7 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
 
 ---
 
-## 🧹 Suggested Repo Structure
+##🧹 Suggested Repo Structure
 
 ```
 .
@@ -140,7 +140,7 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
 
 ---
 
-## 📝 Requirements
+##📝 Requirements
 
 ```
 pandas
@@ -154,13 +154,14 @@ jupyter
 
 Install with:
 
-```bash
+```
+bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🧩 References
+##🧩 References
 
 - **USAspending.gov – Federal Accounts**  
   https://www.usaspending.gov/federal_account
@@ -174,7 +175,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📝License
+##📝 License
 
 **MIT** — Use, adapt, and distribute with attribution.
 
