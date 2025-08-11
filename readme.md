@@ -5,9 +5,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
 
-A clean, reproducible Jupyter Notebook (`ipynb/max.ipynb`) for quick statistical exploration of
-**Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
-**Budget Year (BY)**. Ideal for analysts who need a fast statistical pass on budget submissions,
+- A statistical exploration of **Schedule-X** style budget tables across **Prior Year (PY)**, 
+**Current Year (CY)**, and **Budget Year (BY)**. 
+- Ideal for analysts working on budget submissions,
 fiscal snapshots, and account-level measures.
 
 ---
