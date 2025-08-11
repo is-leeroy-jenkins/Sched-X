@@ -94,13 +94,22 @@ The notebook is designed for **Schedule-X** style datasets with numeric columns 
 - **PY** — Prior Year
 - **CY** — Current Year
 - **BY** — Budget Year
+- **OY-1** - Out Year 1
+- **OY-2** - Out Year 2
+- **OY-3** - Out Year 3
+- **OY-4** - Out Year 4
+- **OY-5** - Out Year 5
+- **OY-6** - Out Year 6
+- **OY-7** - Out Year 7
+- **OY-8** - Out Year 8
+- **OY-9** - Out Year 9
 
 A minimal table might look like:
 
-| agency | bureau | account | PY      | CY      | BY      |
-|-------:|:------:|:-------:|--------:|--------:|--------:|
-| 001    | 10     | 1234    | 1050.25 | 1101.00 | 1149.90 |
-| 001    | 20     | 5678    |  450.00 |  465.75 |  480.50 |
+| agency | bureau | account | PY      | CY      | BY      | OY-1      | OY-2       |
+|-------:|:------:|:-------:|--------:|--------:|--------:|----------:|-----------:|
+| 001    | 10     | 1234    | 1050.25 | 1101.00 | 1149.90 |           |            |
+| 001    | 20     | 5678    |  450.00 |  465.75 |  480.50 |           |            |
 
 **Notes**
 
