@@ -1,56 +1,30 @@
 ###### Schedule-X
 ![](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/resources/images/git/schedx.png)
 
-# Schedule-X 
-
-## 🧩 Background
-- At formulation time, agency budget offices key in both policy and baseline estimates—budget
-authority, outlays, and receipts—through Schedule X; MAX then auto-populates the related schedules (
-A and S) from those entries.
-whitehouse.gov
-
-- For the prior-year actuals, MAX doesn’t rely on agency keystrokes: it pulls them from Treasury’s
-Governmentwide Treasury Account Symbol Adjusted Trial Balance System (GTAS) after GTAS “lock” in
-late October
-
-- This design also keeps the Budget’s “actual” column consistent with the SF-133 Report on Budget
-Execution, which agencies submit through GTAS—OMB’s A-11 notes that the Budget’s actuals are derived
-from the same data as the SF-133, and Treasury’s guidance emphasizes using the GTAS Period 12
-revision window to make GTAS and the Budget match.
-
-
-- Some schedules have their own external sources/constraints. Employment (Schedule Q) is checked
-against OPM’s monthly civilian FTE totals that OPM transmits to OMB
-
-- DoD military employment is provided separately to OMB and reflected in MAX.
-
-
-- Federal credit programs must compute subsidy rates and financing-account interest with OMB’s Credit
-Subsidy Calculator (CSC2); 
-
-- Receipts estimates aren’t free-hand entries either—the Administration’s official receipts forecasts
-are produced by Treasury’s Office of Tax Analysis (OTA) and carried through the Budget (and MSR).
-U.S. Department of the Treasury
+# Schedule-X: Federal Budget Statistical Analysis (PY · CY · BY)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
 
----
-
-## Features
-
-- **📊 Descriptive Statistics** — `count`, `mean`, `std`, `min/max`, quartiles, **skew**, **kurtosis
-  **.
-- **📈 Distributions** — histograms + KDE for PY/CY/BY (optional zero filtering).
-- **🔎 Normality Testing** — **Shapiro–Wilk** per column with p-values.
-- **📏 Confidence Intervals** — mean CIs (95% by default; configurable).
-- **🎯 Inferential Test** — one-sample **t-test** on CY vs a configurable baseline (default μ₀ = 0).
-- **🧹 Data Hygiene** — numeric coercion and optional zero exclusion to stabilize analyses.
-- **🧩 ML Helper** — compact `plot_decision_regions` utility for quick scikit-learn demos.
-- **📝 Copy-Ready Tables** — concise summary frames for pasting into briefs and slides.
+- A clean, reproducible Jupyter Notebook (`ipynb/max.ipynb`) for quick statistical exploration of
+**Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
+**Budget Year (BY)**
 
 ---
 
-## Table of Contents
+## 📊 Features
+
+- **Descriptive Statistics** — `count`, `mean`, `std`, `min/max`, quartiles, **skew**, **kurtosis**.
+- **Distributions** — histograms + KDE for PY/CY/BY (optional zero filtering).
+- **Normality Testing** — **Shapiro–Wilk** per column with p-values.
+- **Confidence Intervals** — mean CIs (95% by default; configurable).
+- **Inferential Test** — one-sample **t-test** on CY vs a configurable baseline (default μ₀ = 0).
+- **Data Hygiene** — numeric coercion and optional zero exclusion to stabilize analyses.
+- **ML Helper** — compact `plot_decision_regions` utility for quick scikit-learn demos.
+- **Copy-Ready Tables** — concise summary frames for pasting into briefs and slides.
+
+---
+
+## 📈 Table of Contents
 
 - [Quickstart](#quickstart)
 - [Data Expectations](#data-expectations)
@@ -64,7 +38,7 @@ U.S. Department of the Treasury
 
 ---
 
-## Quickstart
+## 🎯 Quickstart
 
 ### Option A — Google Colab (no local setup)
 
@@ -75,7 +49,8 @@ U.S. Department of the Treasury
 
 ### Option B — Local (conda or venv)
 
-```bash
+```
+bash
 # 1) Create environment
 conda create -n schedx python=3.11 -y
 conda activate schedx
@@ -92,7 +67,7 @@ Open `ipynb/max.ipynb` and run cells top-to-bottom.
 
 ---
 
-## Data Expectations
+## 🔎 Data Expectations
 
 The notebook is designed for **Schedule-X** style datasets with numeric columns for:
 
@@ -115,7 +90,7 @@ A minimal table might look like:
 
 ---
 
-## Outputs
+## 📏 Outputs
 
 - **Summary Frames** — PY/CY/BY metrics with skew/kurtosis (copy-ready).
 - **Distribution Plots** — histograms + KDE overlays per column.
@@ -127,7 +102,7 @@ A minimal table might look like:
 
 ---
 
-## Configuration
+## 🎯 Configuration
 
 Set these variables near the top of the notebook:
 
@@ -151,7 +126,7 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
 
 ---
 
-## Suggested Repo Structure
+## 🧹 Suggested Repo Structure
 
 ```
 .
@@ -165,7 +140,7 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
 
 ---
 
-## Requirements
+## 📝 Requirements
 
 ```
 pandas
@@ -185,7 +160,7 @@ pip install -r requirements.txt
 
 ---
 
-## References
+## 🧩 References
 
 - **USAspending.gov – Federal Accounts**  
   https://www.usaspending.gov/federal_account
@@ -199,12 +174,10 @@ pip install -r requirements.txt
 
 ---
 
-## License
+## 📝License
 
 **MIT** — Use, adapt, and distribute with attribution.
 
----
 
-## Maintainer
 
-**Bro** — _“because the code just works.”_
+
