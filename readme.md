@@ -26,14 +26,14 @@
 
 ## 📈 Table of Contents
 
-- [Quickstart](#quickstart)
-- [Data Expectations](#data-expectations)
-- [Outputs](#outputs)
-- [Configuration](#configuration)
-- [Suggested Repo Structure](#suggested-repo-structure)
-- [Requirements](#requirements)
-- [References](#references)
-- [License](#license)
+- [Quickstart](#-quickstart)
+- [Data Expectations](#-data-expectations)
+- [Outputs](#-outputs)
+- [Configuration](#-configuration)
+- [Suggested Repo Structure](#-suggested-repo-structure)
+- [Requirements](#-requirements)
+- [References](#-references)
+- [License](#-license)
 
 
 
