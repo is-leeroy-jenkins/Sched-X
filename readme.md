@@ -141,3 +141,36 @@ A clear, repeatable pipeline for Schedule-X style analysis across **PY**, **CY**
 > - Observations are independent; columns represent the same conceptual measure across PY/CY/BY.
 > - If normality is rejected and `n` is small, consider transforming data or using non-parametric tests.
 > - Zero handling is configurable because structural zeros can distort both plots and tests.
+
+
+## Data Expectations
+
+The notebook is designed to work with a **Schedule-X style** dataset containing numeric columns for:
+
+- **PY** — Prior Year  
+- **CY** — Current Year  
+- **BY** — Budget Year  
+
+At a minimum, the table should look like:
+
+| agency | bureau | account | PY      | CY      | BY      |
+|-------:|:------:|:-------:|--------:|--------:|--------:|
+| 001    | 10     | 1234    | 1050.25 | 1101.00 | 1149.90 |
+| 001    | 20     | 5678    |  450.00 |  465.75 |  480.50 |
+
+### Notes:
+- **Column names are configurable** — change them in the configuration block at the start of the notebook.
+- **Zero handling** — an option is provided to drop zero values before statistical analysis to avoid skewing distributions or test results.
+- **Numeric coercion** — the notebook will attempt to convert your specified columns to numeric types automatically.
+
+Example configuration:
+
+```python
+# ---- Configuration ----
+DATA_PATH  = "your_data.csv"  # Path to CSV file
+COL_PY     = "PY"
+COL_CY     = "CY"
+COL_BY     = "BY"
+DROP_ZEROS = True             # Whether to drop zeros in analysis
+ALPHA      = 0.05              # Significance level for statistical tests
+CI_LEVEL   = 0.95              # Confidence interval level
