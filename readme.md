@@ -62,7 +62,31 @@ jupyter notebook
 
 Open `ipynb/max.ipynb` and run cells top-to-bottom.
 
+### 📊 Regression
 
+- Linear, Ridge, Lasso, ElasticNet
+- Decision Tree, Random Forest, Gradient Boosting
+- SVR, KNN, MLP Regressor, Bayesian Ridge, Huber Regressor
+
+### ✅ Classification
+
+- Logistic Regression, Perceptron, SVM, KNN
+- Decision Tree, Random Forest, Extra Trees, AdaBoost, Gradient Boosting
+- MLP Classifier, Naive Bayes
+
+## 📊 Diagnostics & Evaluation
+
+- Scatter plots, residuals, precision-recall, ROC curves
+- Confusion matrices, ANOVA tests, statistical fitting
+- PCA visualizations and correlation heatmaps
+
+## 📁 Data & Engineering
+
+- Excel and CSV ingestion
+- Imputation (`SimpleImputer`, `KNNImputer`)
+- Scaling (`StandardScaler`, `MinMaxScaler`, `RobustScaler`)
+- Feature creation via polynomial expansion
+- Dimensionality reduction and outlier detection
 
 ## 🔎 Data Expectations
 
