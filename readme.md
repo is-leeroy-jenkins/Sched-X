@@ -16,8 +16,7 @@
 - **Confidence Intervals** — mean CIs (95% by default; configurable).
 - **Inferential Test** — one-sample **t-test** on CY vs a configurable baseline (default μ₀ = 0).
 - **Data Hygiene** — numeric coercion and optional zero exclusion to stabilize analyses.
-- **ML Helper** — compact `plot_decision_regions` utility for quick scikit-learn demos.
-- **Copy-Ready Tables** — concise summary frames for pasting into briefs and slides.
+- **ML Helper** — compact `plot_decision_regions` utility for quick analysis.
 
 
 
