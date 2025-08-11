@@ -3,7 +3,7 @@
 ___
 #### A machine-learning pipeline for Combined Schedule (X) reporting.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/max.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/schedule-x.ipynb)
 
 ## 📊 Features
 
@@ -53,7 +53,7 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn jupyter
 jupyter notebook
 ```
 
-Open `ipynb/max.ipynb` and run cells top-to-bottom.
+Open `ipynb/schedule-x.ipynb` and run cells top-to-bottom.
 
 ## 📊 Regression
 
