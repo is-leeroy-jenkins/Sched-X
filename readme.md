@@ -104,7 +104,7 @@ A minimal table might look like:
 
 **Notes**
 
-- Column names are configurable (see [Configuration](#configuration)).
+- Column names are configurable (see [Configuration](#-configuration)).
 - The loader coerces specified columns to numeric.
 - Optional zero filtering is available to avoid distorting distributions and tests.
 
