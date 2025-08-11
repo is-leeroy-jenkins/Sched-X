@@ -187,7 +187,7 @@ pip install -r requirements.txt
 - **OMB Circular A-11:** - [Dataset](https://www.kaggle.com/datasets/terryeppler/omb-circular-a-11)
 - **Principles of Federal Appropriations Law:** - [Dataset](https://www.kaggle.com/datasets/terryeppler/principles-of-federal-appropriations-law)
 
-> **Disclaimer**: This notebook is for analytical exploration and education.  
+> **Disclaimer**: This is for analytical exploration, research, and education purposes.  
 > It is **not** an official OMB/Treasury product; validate against authoritative sources before use.
 
 ## 📝 License
