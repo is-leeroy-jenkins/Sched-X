@@ -63,7 +63,8 @@ Upload your CSV (or mount Drive), set the `DATA_PATH`, and run all cells.
 
 ### Option B — Local (conda or venv)
 
-```bash
+```
+bash
 # 1) create environment
 conda create -n schedx python=3.11 -y
 conda activate schedx
@@ -73,7 +74,7 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn mglearn jupyter
 
 # 3) run Jupyter
 jupyter notebook
-
+```
 ## Repo Structure
 .
 ├─ ipynb/
