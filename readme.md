@@ -152,35 +152,25 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
   meaningful.
 - Filter the DataFrame by agency/account before running stats to produce slice-specific results.
 
+## 📦 Dependencies
+
+| Package       | Description                          | Link                                               |
+|---------------|--------------------------------------|----------------------------------------------------|
+| numpy         | Numerical computing                   | [numpy.org](https://numpy.org/)                    |
+| pandas        | Data manipulation                     | [pandas.pydata.org](https://pandas.pydata.org/)    |
+| matplotlib    | Plotting                              | [matplotlib.org](https://matplotlib.org/)          |
+| seaborn       | Statistical plots                     | [seaborn.pydata.org](https://seaborn.pydata.org/)  |
+| scikit-learn  | Machine learning models               | [scikit-learn.org](https://scikit-learn.org/)      |
+| xgboost       | Extreme gradient boosting             | [xgboost.readthedocs.io](https://xgboost.readthedocs.io/) |
+| statsmodels   | Statistical modeling & ANOVA          | [statsmodels.org](https://www.statsmodels.org/)    |
+| openpyxl      | Excel I/O                             | [openpyxl.readthedocs.io](https://openpyxl.readthedocs.io/) |
+| fitz (PyMuPDF)| PDF parsing                           | [pymupdf.readthedocs.io](https://pymupdf.readthedocs.io/) |
+| loguru        | Logging                               | [github.com/Delgan/loguru](https://github.com/Delgan/loguru) |
 
 
-## 🧹 Suggested Repo Structure
-
-```
-.
-├─ ipynb/
-│  └─ max.ipynb
-├─ data/                 # place CSVs here (consider .gitignore for large files)
-├─ images/               # optional: exported figures for README
-├─ requirements.txt
-└─ README.md
-```
 
 
-
-## 📝 Requirements
-
-```
-pandas
-numpy
-scipy
-matplotlib
-seaborn
-scikit-learn
-jupyter
-```
-
-Install with:
+#### Install with:
 
 ```
 bash
@@ -201,11 +191,11 @@ pip install -r requirements.txt
 > **Disclaimer**: This notebook is for analytical exploration and education.  
 > It is **not** an official OMB/Treasury product; validate against authoritative sources before use.
 
-
-
 ## 📝 License
 
-**MIT** — Use, adapt, and distribute with attribution.
+schedx is published under
+the [MIT General Public License v3](https://github.com/is-leeroy-jenkins/schedx/blob/main/LICENSE).
+
 
 
 
