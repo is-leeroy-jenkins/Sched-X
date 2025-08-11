@@ -2,14 +2,13 @@
 ![](https://github.com/is-leeroy-jenkins/Sched-X/blob/master/resources/images/git/schedx.png)
 
 # Schedule-X 
-- A Prior Year, Current Year, and Budget Year Statistical Analysis 
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
-
+- A Prior Year, Current Year, and Budget Year Statistical Analysis
 - A statistical exploration of **Schedule-X** style budget tables across **Prior Year (PY)**, 
 **Current Year (CY)**, and **Budget Year (BY)**. 
 - Ideal for analysts working on budget submissions,
 fiscal snapshots, and account-level measures.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/BudgetPy/blob/master/ipynb/max.ipynb)
 
 ---
 
