@@ -9,7 +9,7 @@
 **Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
 **Budget Year (BY)**
 
----
+
 
 ## 📊 Features
 
@@ -22,7 +22,7 @@
 - **ML Helper** — compact `plot_decision_regions` utility for quick scikit-learn demos.
 - **Copy-Ready Tables** — concise summary frames for pasting into briefs and slides.
 
----
+
 
 ## 📈 Table of Contents
 
@@ -34,11 +34,10 @@
 - [Requirements](#requirements)
 - [References](#references)
 - [License](#license)
-- [Maintainer](#maintainer)
 
----
 
-##🎯 Quickstart
+
+## 🎯 Quickstart
 
 ### Option A — Google Colab (no local setup)
 
@@ -65,9 +64,9 @@ jupyter notebook
 
 Open `ipynb/max.ipynb` and run cells top-to-bottom.
 
----
 
-##🔎 Data Expectations
+
+## 🔎 Data Expectations
 
 The notebook is designed for **Schedule-X** style datasets with numeric columns for:
 
@@ -88,9 +87,9 @@ A minimal table might look like:
 - The loader coerces specified columns to numeric.
 - Optional zero filtering is available to avoid distorting distributions and tests.
 
----
 
-##📏 Outputs
+
+## 📏 Outputs
 
 - **Summary Frames** — PY/CY/BY metrics with skew/kurtosis (copy-ready).
 - **Distribution Plots** — histograms + KDE overlays per column.
@@ -100,13 +99,14 @@ A minimal table might look like:
 
 > Pro tip: Right-click plots in Jupyter → “Save image as…” to drop charts directly into briefings.
 
----
 
-##🎯 Configuration
+
+## 🎯 Configuration
 
 Set these variables near the top of the notebook:
 
-```python
+```
+python
 # ---- Configuration ----
 DATA_PATH  = "your_data.csv"   # Path to CSV
 COL_PY     = "PY"
@@ -124,9 +124,9 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
   meaningful.
 - Filter the DataFrame by agency/account before running stats to produce slice-specific results.
 
----
 
-##🧹 Suggested Repo Structure
+
+## 🧹 Suggested Repo Structure
 
 ```
 .
@@ -138,9 +138,9 @@ MU_0       = 0.0               # Baseline for one-sample t-test on CY
 └─ README.md
 ```
 
----
 
-##📝 Requirements
+
+## 📝 Requirements
 
 ```
 pandas
@@ -159,9 +159,9 @@ bash
 pip install -r requirements.txt
 ```
 
----
 
-##🧩 References
+
+## 🧩 References
 
 - **USAspending.gov – Federal Accounts**  
   https://www.usaspending.gov/federal_account
@@ -173,9 +173,9 @@ pip install -r requirements.txt
 > **Disclaimer**: This notebook is for analytical exploration and education.  
 > It is **not** an official OMB/Treasury product; validate against authoritative sources before use.
 
----
 
-##📝 License
+
+## 📝 License
 
 **MIT** — Use, adapt, and distribute with attribution.
 
