@@ -6,7 +6,7 @@
 **Schedule-X** style budget tables across **Prior Year (PY)**, **Current Year (CY)**, and
 **Budget Year (BY)**
 
-![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/max.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/is-leeroy-jenkins/schedx/blob/master/max.ipynb)
 
 ## 📊 Features
 
